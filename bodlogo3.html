@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>bodlogo3</title>
+</head>
+<body>
+    <h3>Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ гэдгийг олж байна.</h3>
+    <script>
+        var ail=1;
+        var arr =[ ];
+        var i,j,k;
+        for(i=0;i<3;i++){
+            arr[i]=[];
+            for(j=0;j<9;j++){
+                arr [i][j]= [];
+                for(k=0;k<4;k++){
+                    arr[i][j][k] = ail;
+                    ail++;
+                }
+            }
+        }
+        x = window.prompt("Хаалганы дугаараа оруул:");
+        var found =false;
+        for(i=0;i<3;i++){
+            for(j=0;j<9;j++){
+                for(k=0;k<4;k++){
+                    if(arr[i][j][k]==x){
+                        document.writeln(x+"тоот нь "+(i+1)+"-р орцны "+(j+1)+"-р давхарын "+(k+1)+"-р хаалга байна.");
+                        found =true;
+                        break;
+                    }
+                }  
+            }
+        }
+        if(!found){
+            document.writeln("Таны оруулсан тоот олдсонгүй.");
+        }
+    </script>
+</body>

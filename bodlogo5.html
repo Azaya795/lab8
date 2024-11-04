@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="utf-8">
+    <title>Зэрэг ба Язгуур</title>
+</head>
+<body>
+    <h2>Зэрэг ба Язгуурыг тооцоолох</h2>
+    <script>
+            var number = parseInt(window.prompt("Enter a number:"));
+            var now = new Date(); 
+            var hours = now.getHours(); 
+
+            if (hours < 12) {
+                var square = number * number;
+                document.writeln("Одоо цаг "+hours+" цаг болж байгаа учир "+number+ " тооны зэрэгийг олвол: "+square+" гарч байна.");
+            } else { 
+                if (number < 0) {
+                    document.writeln("result: Язгуур олох боломжгүй (тус тоо сөрөг байна)."); 
+                } else {
+                    var squareRoot = Math.sqrt(number); 
+                    document.writeln("Одоо цаг "+hours+" цаг　болж байгаа учир "+number+ " тооны язгуурыг олвол:"+ squareRoot+"гарч байна.");
+                }
+            }
+    </script>
+</body>
+</html>

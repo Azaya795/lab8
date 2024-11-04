@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>bodlogo2</title>
+</head>
+<body>
+    <h4>Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ гэдгийг олж байна.</h4>
+    <script>
+    var chono;
+    var tuulai;
+    var s;
+    var t1, t2;
+    var v;
+    chono = 25;
+    tuulai = 18;
+    s = window.prompt("Чоно туулай хоёрын хоорондох зайг оруул:( нэгж нь км байна.):");
+    v = chono-tuulai;
+    t1 = Math.floor((parseInt(s)/v)*60);
+    t2 = Math.round((parseInt(s)/v)*3600)%60;
+    document.writeln(t1+" минут "+"     "+t2+" секунд дараа гүйцнэ");
+    </script>
+
+</body>

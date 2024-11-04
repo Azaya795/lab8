@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>bodlogo4</title>
+</head>
+<body>
+    <h2>Array-д өгөгдсөн 5 тооны хамгийн бага ерөнхий хуваагдагчийг олж байна.
+    </h2>
+    <script>
+        var arr = [];
+        for(var i=0;i<5;i++){
+            arr [i] = parseInt(window.prompt("Та дурын 5 тоогоо оруулна уу: "),10);
+        }
+        var min = arr[0];
+        for(var i=1;i<5;i++){
+          var a = min ;
+          var b = arr[i];
+            while(b != 0){
+                var temp = b;
+                b = a % b;
+                a = temp;
+            }
+            min = (min*arr[i])/a;
+        }
+        document.writeln("Таны оруулсан 5 тооны хамгийн бага ерөнхий хуваагдагч : " + min +" байна.");
+    </script>
+</body>
